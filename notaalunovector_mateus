@@ -1,0 +1,38 @@
+/*Fazer um FPP que leia um vetor Nota com 10 valores reais de notas de alunos. 
+Depois disso, calcular quantos alunos foram aprovados (nota>=5) e quantos alunos foram reprovados (nota<5). 
+Depois, calcular a média geral e calcular quantos alunos ficaram com nota abaixo da média e quantos alunos 
+ficaram com nota acima da média. Em seguida, mostrar esses resultados calculados, com a devida mensagem.
+*/
+/*Make an FPP that reads a vector Note with 10 real values of student grades.
+After that, he calculated how many students were approved (note> = 5) and how many students were disapproved (note <5).
+Then calculate a general average and calculate how many students were below grade and how many students
+were above average. Instead, most of these calculated results, with a message of due.
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	int notas[10],media,i,aprov=0,reprov=0,soma=0;
+	for(i=0;i<10;i++){
+		printf("Digite as notas de 0 a 10: ");
+		printf("notas[%d]= ",i);
+		scanf("%d",&notas[i]);
+	}
+		for(i=0;i<10;i++){
+			if(notas[i]>=5)
+			aprov=aprov+1;
+				else	
+				reprov=reprov+1;
+				
+				soma=soma+notas[i];
+			}
+			
+	media=soma/10;
+
+	printf("\nAlunos APROVADOS: %d",aprov);
+	printf("\nAlunos REPROVADOS: %d",reprov);
+	printf("\nNotas ACIMA da MEDIA: %d\n",media);
+
+system("pause");
+}
