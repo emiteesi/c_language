@@ -1,0 +1,24 @@
+/*Fazer um programa que leia os valors de A e B e depois some-os.*/
+/*Make a program that reads the values of A and B and then adds them up.*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	int a[10],b[10],i,soma[10];
+	for(i=0;i<10;i++){
+			printf("Digite os valores para A: ");
+			printf("a[%d]=",i);
+			scanf("%d", &a[i]);
+		}
+			for(i=0;i<10;i++){
+				printf("Digite os valores para B: ");
+				printf("b[%d]=",i);
+				scanf("%d",&b[i]);
+			}
+				for(i=0;i<10;i++){
+					soma[i]=a[i]+b[i];
+					printf("A soma dos vetores A e B eh: [%d]=%d\n",i, soma[i]);
+				}
+system("pause");
+}
