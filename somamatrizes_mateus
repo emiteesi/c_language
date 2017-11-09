@@ -1,0 +1,32 @@
+/*Fazer um programa que receba valores para duas matrizes de 2x2 e depois some os valores de cada matriz*/
+/*Make a program that receives values for two arrays (2x2) and then some of the values of each array */
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+
+	int matriz1[2][2],matriz2[2][2],i,j,soma=0,produto=0;
+
+	printf("\nDigite os VALORES que compoe os elementos da matriz:\n\n");
+	
+	for(i=0;i<2;i++){
+		for(j=0;j<2;j++){
+			printf("Digite os VALORES da MATRIZ 1 [%d][%d]: ",i,j);
+			scanf("%d",&matriz1[i][j],i,j);
+		}
+	}		
+		for(i=0;i<2;i++){
+			for(j=0;j<2;j++){
+				printf("Digite os VALORES da MATRIZ 2 [%d][%d]: ",i,j);
+				scanf("%d",&matriz2[i][j],i,j);
+			}
+		}
+				for(i=0;i<2;i++){
+					for(j=0;j<2;j++){
+						soma=matriz1[i][j]+matriz2[i][j];
+						printf("\nResultado da soma das MATRIZES [%d][%d] %d: ",i,j,soma);
+					}
+				}
+system("pause");
+}
