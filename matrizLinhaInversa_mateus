@@ -1,0 +1,27 @@
+/*Fazer uma matriz de 3 linhas e 4 colunas (3x4) e depois inverta somente a posição das linhas. 
+Make a matrix of 3 rows and 4 columns (3x4) and then reverse only the position of rows. */
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+
+int matriz[3][4],i,j;
+  printf ("\nDigite os valores para os elementos da matriz\n\n");
+
+  for(i=0;i<3;i++){
+    for(j=0;j<4;j++){
+       printf ("\nElemento[%d][%d]=",i,j);
+       scanf ("%d", &matriz[i][j]);
+    }
+  }
+   printf("\n\nSAIDA DE DADOS\n\n");
+
+   for(i=0;i<3;i++){
+    	for(j=3;j>=0;j--){
+       	printf("\nInversao de LINHA: [%d][%d]=%d\n",i,j,matriz[i][j]);
+    	}
+  }
+  system("pause");
+}
