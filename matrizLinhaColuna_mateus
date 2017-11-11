@@ -1,0 +1,39 @@
+/*Fazer uma matriz com os seguintes dados: 
+Make an array with the following data:
+
+1 2 3
+4 5 6
+7 8 9
+
+Depois, representá-los assim:
+Then, represent them like this:
+
+1 4 7
+2 5 8
+3 6 9
+*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+
+int matriz[3][3],i,j;
+  printf ("\nDigite os valores para os elementos da matriz\n\n");
+
+  for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+       printf("\nElemento[%d][%d]=",i,j);
+       scanf("%d",&matriz[i][j]);
+    }
+  }
+   printf("\n\nSAIDA DE DADOS\n\n");
+
+   for(j=0;j<3;j++){ //column
+		for(i=0;i<3;i++){ //row
+       		printf ("\nElementos [%d][%d]=%d\n",i,j,matriz[i][j]);
+    	}
+   }
+  system("pause");
+}
