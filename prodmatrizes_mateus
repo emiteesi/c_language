@@ -1,5 +1,5 @@
-/*Fazer duas matrizes de tres linhas e tres colunas (3x2), apartir dos dados, gerar o produto. 
-/*Make two arrays of three rows and three columns (3x2), from the data, generate the product. */
+/*Fazer duas matrizes de tres linhas e duas colunas (3x2), apartir dos dados, gerar o produto. 
+/*Make two arrays of three rows and two columns (3x2), from the data, generate the product. */
 
 #include<stdio.h>
 #include<stdlib.h>
