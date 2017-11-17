@@ -1,0 +1,37 @@
+/*Fazer duas matrizes de tres linhas e tres colunas (3x3), apartir dos dados, gerar o produto. 
+/*Make two arrays of three rows and three columns (3x3), from the data, generate the product. */
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+
+int matriz1[3][2],matriz2[3][2],prod,i,j;
+
+printf("DIGITE OS ELEMENTOS QUE COMPOE A MATRIZ 1 E 2 PARA GERAR o PRODUTO DE AMBAS: \n\n");
+
+for(i=0;i<3;i++){
+	for(j=0;j<3;j++){
+		printf("Digite os numeros para completar a matriz 1 [%d][%d]: ",i,j);
+		scanf("%d",&matriz1[i][j],i,j);
+   }
+}
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			printf("Digite os numeros para completar a matriz 2 [%d][%d]: ",i,j);
+			scanf("%d",&matriz2[i][j],i,j);
+		}
+	}
+			for(i=0;i<3;i++){
+				for(j=0;j<3;j++){
+					prod=matriz1[i][j]*matriz2[i][j];
+				}
+			}
+			printf("PRODUTO DAS MATRIZES 1 E 2: ");
+			for(i=0;i<3;i++){
+				for(j=0;j<3;j++){
+					printf("\nO PRODUTO das duas matrizes sao: %d",prod);
+				}
+			}
+	system("pause");
+}
